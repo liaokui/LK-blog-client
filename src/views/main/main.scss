@@ -1,0 +1,54 @@
+@import '../../styles/color.scss';
+#main {
+  header {
+    border-bottom: solid 1px $themeBorderColor;
+    .header {
+        width: 1080px;
+        margin: 0 auto;
+        .logo {
+          width: 136px;
+          height: 60px;
+          position: relative;
+          float: left;
+          p {
+            display: block;
+            font-size: 36px;
+            color: $themeTextColor;
+            line-height: 60px;
+            text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 20px;
+          }
+        }
+        .el-menu {
+          width: 340px;
+          float: left;
+          margin-left: 484px;
+          border-bottom: none;
+          &.el-menu--horizontal{
+            .el-menu-item.is-active {
+              color: $themeTextColor;
+            }
+          }
+        }
+    }
+  }
+  section {
+    width: 100%;
+    min-height: calc(100vh - 121px);
+    background-color: $themeBgColor;
+  }
+  footer {
+    width: 100%;
+    height: 60px;
+    p {
+      color: $footerTextColor;
+      font-size: 12px;
+      text-align: center;
+      line-height: 60px;
+    }
+  }
+}

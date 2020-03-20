@@ -57,7 +57,7 @@
   import index from './home'
   export default index
 </script>
-<style rel='stylesheet/scss' lang='scss'>
+<style rel='stylesheet/scss' scoped lang='scss'>
 @import './home.scss';
 </style>
 
