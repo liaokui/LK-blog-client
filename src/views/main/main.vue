@@ -9,26 +9,44 @@
                  class="el-menu-demo"
                  mode="horizontal"
                  @select="handleSelect">
-          <el-menu-item index="home">
+          <!-- <el-menu-item index="home">
             <router-link :to="{'path': '/'}">首页</router-link>
-          </el-menu-item>
+          </el-menu-item> -->
           <el-menu-item index="article">
-            <router-link :to="{'path': '/main/articleList'}">文章</router-link>
+            <router-link :to="{'path': '/'}">文章</router-link>
           </el-menu-item>
           <el-menu-item index="project">
-            <router-link :to="{'path': '/main/projectList'}">项目</router-link>
+            <router-link :to="{'path': '/projectList'}">项目</router-link>
           </el-menu-item>
           <el-menu-item index="introduct">
-            <router-link :to="{'path': '/main/introduct'}">简介</router-link>
+            <router-link :to="{'path': '/introduct'}">简介</router-link>
           </el-menu-item>
           <el-menu-item index="leaveMessage">
-            <router-link :to="{'path': '/main/leaveMessage'}">留言</router-link>
+            <router-link :to="{'path': '/leaveMessage'}">留言</router-link>
+          </el-menu-item>
+          <el-menu-item class="githubLink">
+            <a href="https://github.com/liaokui"
+               target="_blank">
+              <i class="iconfont icongithub linkIcon"></i>
+            </a>
           </el-menu-item>
         </el-menu>
       </div>
     </header>
     <section>
-      <router-view></router-view>
+      <div class="content clearfix">
+        <div class="left">
+          <router-view></router-view>
+        </div>
+        <div class="right">
+          <div class="author">
+            <p class="title">关于作者</p>
+            <div class="box">
+
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
       <p>这是一段描述文字</p>

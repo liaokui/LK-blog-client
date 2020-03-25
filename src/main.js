@@ -5,6 +5,7 @@ import router from './router/index'
 // import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css'
 import './styles/index.scss'
+import './assets/icon/iconfont.css'
 
 import { Button, Select, Row, Col, Menu, MenuItem } from 'element-ui';
 import 'normalize.css'

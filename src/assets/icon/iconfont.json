@@ -1,0 +1,23 @@
+{
+  "id": "1714447",
+  "name": "lkblog",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "个人博客",
+  "glyphs": [
+    {
+      "icon_id": "836610",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e718",
+      "unicode_decimal": 59160
+    },
+    {
+      "icon_id": "3427860",
+      "name": "链接",
+      "font_class": "icon-",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    }
+  ]
+}

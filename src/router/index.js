@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const Home = () => import('../views/home/home.vue')
 const Error = () => import('../views/error/error.vue')
 const Main = () => import('../views/main/main.vue')
 const ArticleList = () => import('../views/articleList/articleList.vue')
@@ -18,14 +17,9 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home,
-    },
-    {
-      path: '/main',
       name: 'main',
       component: Main,
-      redirect: '/main/articleList',
+      redirect: '/articleList',
       children: [
         {
           path: 'articleList',
