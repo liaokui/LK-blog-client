@@ -42,8 +42,19 @@
           <div class="author">
             <p class="title">关于作者</p>
             <div class="box">
-              <div class="avatar">
-
+              <div class="clearfix">
+                <div class="avatar">
+                  <el-image src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
+                            :preview-src-list="['https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png']"></el-image>
+                </div>
+                <div class="info">
+                  <p>LELK</p>
+                  <span>前端程序员</span>
+                </div>
+              </div>
+              <div class="count">
+                <p>文章数: 10</p>
+                <p>项目数: 10</p>
               </div>
             </div>
           </div>

@@ -66,8 +66,7 @@
       }
       .left {
         width: 700px;
-        height: 500px;
-        padding: 24px;
+        min-height: 500px;
       }
       .right {
         width: 240px;
@@ -80,6 +79,39 @@
             font-size: 14px;
             line-height: 20px;
             border-bottom: 1px solid $themeBorderColor;
+          }
+          .box {
+            padding: 15px;
+            .avatar {
+              width: 50px;
+              height: 50px;
+              float: left;
+              margin-right: 15px;
+              border-radius: 50px;
+              overflow: hidden;
+            }
+            .info {
+              float: left;
+              p {
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 25px;
+              }
+              span {
+                margin-bottom: 5px;
+                color: $themeTipTextColor;
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+            .count {
+              padding: 0 15px;
+              margin-top: 20px;
+              p {
+                font-size: 14px;
+                line-height: 30px;
+              }
+            }
           }
         }
       }

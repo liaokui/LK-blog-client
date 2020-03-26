@@ -7,7 +7,7 @@ import router from './router/index'
 import './styles/index.scss'
 import './assets/icon/iconfont.css'
 
-import { Button, Select, Row, Col, Menu, MenuItem } from 'element-ui';
+import { Button, Select, Row, Col, Menu, MenuItem, Image, Tag } from 'element-ui';
 import 'normalize.css'
 
 Vue.prototype.$ELEMENT = { size: 'small', zIndex: 3000 };
@@ -17,7 +17,8 @@ Vue.use(Row)
 Vue.use(Col)
 Vue.use(Menu)
 Vue.use(MenuItem)
-
+Vue.use(Image)
+Vue.use(Tag)
 
 
 Vue.config.productionTip = false
