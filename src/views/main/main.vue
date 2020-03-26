@@ -42,7 +42,9 @@
           <div class="author">
             <p class="title">关于作者</p>
             <div class="box">
+              <div class="avatar">
 
+              </div>
             </div>
           </div>
         </div>
