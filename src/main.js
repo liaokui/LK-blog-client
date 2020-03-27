@@ -7,7 +7,7 @@ import router from './router/index'
 import './styles/index.scss'
 import './assets/icon/iconfont.css'
 
-import { Button, Select, Row, Col, Menu, MenuItem, Image, Tag } from 'element-ui';
+import { Button, Select, Row, Col, Menu, MenuItem, Image, Tag, Backtop, Scrollbar, Card } from 'element-ui';
 import 'normalize.css'
 
 Vue.prototype.$ELEMENT = { size: 'small', zIndex: 3000 };
@@ -19,6 +19,10 @@ Vue.use(Menu)
 Vue.use(MenuItem)
 Vue.use(Image)
 Vue.use(Tag)
+Vue.use(Backtop)
+Vue.use(Scrollbar)
+Vue.use(Card)
+
 
 
 Vue.config.productionTip = false

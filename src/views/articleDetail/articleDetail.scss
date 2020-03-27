@@ -1,0 +1,40 @@
+@import '../../styles/color.scss';
+#articleDetail{
+  width: 100%;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+  .content {
+    padding: 20px;
+    border-bottom: 1px solid $themeBorderColor;
+    .cover{
+      margin-bottom: 15px;
+    }
+    .title {
+      color: $themeTitleTextColor;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 36px;
+    }
+    .info {
+      margin: 10px 0 5px 0;
+      color: $themeTipTextColor;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .tag {
+      .el-tag {
+          margin-right: 10px;
+        }
+    }
+  }
+  .details {
+    padding: 20px;
+    #detailsContent {
+      width: 100%;
+      *{
+        max-width: 100%;
+      }
+    }
+  }
+}

@@ -7,7 +7,8 @@
         right: 0;
         margin: auto;
         background-color: #ffffff;
-    border-bottom: solid 1px $themeBorderColor;
+        border-bottom: solid 1px $themeBorderColor;
+        z-index: 2000;
     .header {
         width: 960px;
         margin: 0 auto;
@@ -49,20 +50,21 @@
         }
     }
   }
-  section {
+  section.container {
     width: 100%;
-    min-height: calc(100vh - 61px);
+    height: 100vh;
     padding-top: 60px;
     background-color: $themeBgColor;
+    overflow-x: hidden;
+    overflow-y: auto;
+
     .content {
       width: 960px;
+      min-height: calc(100vh - 121px);
       padding: 20px 0;
       margin: 0 auto;
       .left, .right {
         float: left;
-        background-color: #ffffff;
-        border-radius: 2px;
-        box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
       }
       .left {
         width: 700px;
@@ -72,6 +74,9 @@
         width: 240px;
         height: 200px;
         margin-left: 20px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
         .author {
           .title {
             padding: 12px 15px;
