@@ -1,0 +1,136 @@
+@import '../../styles/color.scss';
+#main {
+  header {
+    position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: #ffffff;
+        border-bottom: solid 1px $themeBorderColor;
+        z-index: 2000;
+    .header {
+        width: 960px;
+        margin: 0 auto;
+        .logo {
+          width: 136px;
+          height: 60px;
+          position: relative;
+          float: left;
+          p {
+            display: block;
+            font-size: 36px;
+            color: $themeTextColor;
+            line-height: 60px;
+            text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 20px;
+          }
+        }
+        .el-menu {
+          width: 780px;
+          float: left;
+          margin-left: 44px;
+          border-bottom: none;
+          &.el-menu--horizontal{
+            .el-menu-item.is-active {
+              color: $themeTextColor;
+            }
+          }
+          .githubLink {
+            float: right;
+            i{
+               color: #000000;
+              font-size: 26px;
+            }
+          }
+        }
+    }
+  }
+  section.container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+    background-color: $themeBgColor;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .content {
+      width: 960px;
+      min-height: calc(100vh - 121px);
+      padding: 20px 0;
+      margin: 0 auto;
+      .left, .right {
+        float: left;
+      }
+      .left {
+        width: 700px;
+        min-height: 500px;
+      }
+      .right {
+        width: 240px;
+        height: 200px;
+        margin-left: 20px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+        .author {
+          .title {
+            padding: 12px 15px;
+            color: $themeTitleTextColor;
+            font-size: 14px;
+            line-height: 20px;
+            border-bottom: 1px solid $themeBorderColor;
+          }
+          .box {
+            padding: 15px;
+            .avatar {
+              width: 50px;
+              height: 50px;
+              float: left;
+              margin-right: 15px;
+              border-radius: 50px;
+              overflow: hidden;
+            }
+            .info {
+              float: left;
+              p {
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 25px;
+              }
+              span {
+                margin-bottom: 5px;
+                color: $themeTipTextColor;
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+            .count {
+              padding: 0 15px;
+              margin-top: 20px;
+              p {
+                font-size: 14px;
+                line-height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    height: 60px;
+    background-color: $footerBgColor;
+    p {
+      color: $footerTextColor;
+      font-size: 12px;
+      text-align: center;
+      line-height: 60px;
+    }
+  }
+}
