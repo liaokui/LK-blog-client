@@ -1,5 +1,7 @@
 <template>
-  <div id='main'>
+  <div id='main'
+       class="main">
+    <!-- <div class="page-component__scroll el-scrollbar"> -->
     <header>
       <div class="header clearfix">
         <div class="logo">
@@ -33,43 +35,56 @@
         </el-menu>
       </div>
     </header>
-    <section>
-      <div class="content clearfix">
-        <div class="left">
-          <router-view></router-view>
-        </div>
-        <div class="right">
-          <div class="author">
-            <p class="title">关于作者</p>
-            <div class="box">
-              <div class="clearfix">
-                <div class="avatar">
-                  <el-image src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
-                            :preview-src-list="['https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png']"></el-image>
+    <section class="container">
+      <el-scrollbar>
+        <div class="content clearfix">
+          <div class="left">
+            <router-view></router-view>
+          </div>
+          <div class="right">
+            <div class="author">
+              <p class="title">关于作者</p>
+              <div class="box">
+                <div class="clearfix">
+                  <div class="avatar">
+                    <el-image src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
+                              :preview-src-list="['https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png']"></el-image>
+                  </div>
+                  <div class="info">
+                    <p>LELK</p>
+                    <span>前端程序员</span>
+                  </div>
                 </div>
-                <div class="info">
-                  <p>LELK</p>
-                  <span>前端程序员</span>
+                <div class="count">
+                  <p>文章数: 10</p>
+                  <p>项目数: 10</p>
                 </div>
-              </div>
-              <div class="count">
-                <p>文章数: 10</p>
-                <p>项目数: 10</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <el-backtop target=".container">回到顶部</el-backtop>
+        <footer>
+          <p>这是一段描述文字</p>
+        </footer>
+      </el-scrollbar>
     </section>
-    <footer>
-      <p>这是一段描述文字</p>
-    </footer>
   </div>
 </template>
 <script>
   import index from './main'
   export default index
 </script>
+<style rel='stylesheet/scss' lang='scss'>
+#main {
+  .el-scrollbar {
+    height: calc(100vh - 61px);
+    .el-scrollbar__wrap {
+      overflow-x: hidden;
+    }
+  }
+}
+</style>
 <style rel='stylesheet/scss' scoped lang='scss'>
 @import './main.scss';
 </style>

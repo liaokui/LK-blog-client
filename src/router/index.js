@@ -31,7 +31,7 @@ export default new Router({
           },
         },
         {
-          path: 'detail',
+          path: 'articleDetail',
           name: 'articleDetail',
           component: ArticleDetail,
           meta: {

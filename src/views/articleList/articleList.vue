@@ -9,7 +9,11 @@
           <span class="point">·</span>
           <span>{{ item.time }}</span>
         </div>
-        <div class="title wordOverFlow">{{ item.title }}</div>
+        <div class="title wordOverFlow">
+          <router-link :to="{'path': '/articleDetail', 'query': {'id': item.id}}">
+            {{ item.title }}
+          </router-link>
+        </div>
         <div class="tag clearfix wordOverFlow">
           <el-tag size="mini"
                   :type="['', 'success', 'info', 'danger', 'warning'][tagIndex % 4]"
@@ -18,8 +22,10 @@
         </div>
       </div>
       <div class="img">
-        <el-image :src="item.cover"
-                  :preview-src-list="[item.cover]"></el-image>
+        <router-link :to="{'path': '/articleDetail', 'query': {'id': item.id}}">
+          <el-image :src="item.cover"
+                    :preview-src-list="[item.cover]"></el-image>
+        </router-link>
       </div>
     </div>
   </div>
