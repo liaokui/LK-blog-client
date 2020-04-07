@@ -1,7 +1,6 @@
 <template>
   <div id='main'
        class="main">
-    <!-- <div class="page-component__scroll el-scrollbar"> -->
     <header>
       <div class="header clearfix">
         <div class="logo">
@@ -64,11 +63,14 @@
             </div>
           </div>
         </div>
-        <!-- <el-backtop target=".container">回到顶部</el-backtop> -->
+        <el-backtop target=".el-scrollbar .el-scrollbar__wrap" :bottom="40" :visibility-height='500'>
+          top
+        </el-backtop>
         <footer>
           <p>Copyright © 2018 LK. All rights reserved.</p>
         </footer>
       </el-scrollbar>
+      
     </section>
   </div>
 </template>
@@ -82,6 +84,12 @@
     height: 100%;
     .el-scrollbar__wrap {
       overflow-x: hidden;
+      .el-backtop {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 40px;
+        cursor: pointer;
+      }
     }
   }
 }

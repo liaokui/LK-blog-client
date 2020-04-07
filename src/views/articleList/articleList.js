@@ -65,6 +65,38 @@ export default {
     }
   },
   created () {
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
+    this.articleList.push(this.articleList[0])
   },
   methods: {
     init () {
