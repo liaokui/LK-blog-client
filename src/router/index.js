@@ -7,7 +7,7 @@ const ArticleList = () => import('../views/articleList/articleList.vue')
 const ArticleDetail = () => import('../views/articleDetail/articleDetail.vue')
 const ProjectList = () => import('../views/projectList/projectList.vue')
 const ProjectDetail = () => import('../views/projectDetail/projectDetail.vue')
-const Introduct = () => import('../views/introduct/introduct.vue')
+// const Introduct = () => import('../views/introduct/introduct.vue')
 const LeaveMessage = () => import('../views/leaveMessage/leaveMessage.vue')
 
 
@@ -57,22 +57,23 @@ export default new Router({
             title: '项目详情'
           },
         },
-        {
-          path: 'introduct',
-          name: 'introduct',
-          component: Introduct,
-          meta: {
-            belong: 'introduct',
-            title: '简介'
-          },
-        },
+        // {
+        //   path: 'introduct',
+        //   name: 'introduct',
+        //   component: Introduct,
+        //   meta: {
+        //     belong: 'introduct',
+        //     title: '简介'
+        //   },
+        // },
         {
           path: 'leaveMessage',
           name: 'leaveMessage',
           component: LeaveMessage,
           meta: {
             belong: 'leaveMessage',
-            title: '留言'
+            title: '留言',
+            showAuth: false
           }
         }
       ]

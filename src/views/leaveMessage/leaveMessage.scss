@@ -1,0 +1,23 @@
+@import '../../styles/color.scss';
+#leaveMessage{
+  .formBox {
+    padding: 100px 0 0 250px;
+    .validateBox {
+				.el-button {
+					font-size: 12px;
+					margin-left: 10px;
+				}
+				.el-input-group__append {
+					span {
+						display: block;
+						height: 38px;
+						cursor: pointer;
+					}
+				}
+			}
+    .btnGroup {
+      padding-left: 120px;
+      margin-top: 20px;
+    }
+  }
+}

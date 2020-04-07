@@ -20,9 +20,9 @@
           <el-menu-item index="project">
             <router-link :to="{'path': '/projectList'}">项目</router-link>
           </el-menu-item>
-          <el-menu-item index="introduct">
+          <!-- <el-menu-item index="introduct">
             <router-link :to="{'path': '/introduct'}">简介</router-link>
-          </el-menu-item>
+          </el-menu-item> -->
           <el-menu-item index="leaveMessage">
             <router-link :to="{'path': '/leaveMessage'}">留言</router-link>
           </el-menu-item>
@@ -41,7 +41,8 @@
           <div class="left">
             <router-view></router-view>
           </div>
-          <div class="right">
+          <div class="right"
+               v-if="showAuth">
             <div class="author">
               <p class="title">关于作者</p>
               <div class="box">
@@ -63,9 +64,9 @@
             </div>
           </div>
         </div>
-        <el-backtop target=".container">回到顶部</el-backtop>
+        <!-- <el-backtop target=".container">回到顶部</el-backtop> -->
         <footer>
-          <p>这是一段描述文字</p>
+          <p>Copyright © 2018 LK. All rights reserved.</p>
         </footer>
       </el-scrollbar>
     </section>
@@ -78,7 +79,7 @@
 <style rel='stylesheet/scss' lang='scss'>
 #main {
   .el-scrollbar {
-    height: calc(100vh - 61px);
+    height: 100%;
     .el-scrollbar__wrap {
       overflow-x: hidden;
     }

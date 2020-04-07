@@ -1,35 +1,31 @@
 <template>
   <div id='projectList'>
-    <el-row :gutter="20">
-      <el-col :span="12">
-        <el-card :body-style="{ padding: '0px' }">
-          <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
-               class="image">
-          <div style="padding: 14px;">
-            <span>好吃的汉堡</span>
-            <div class="bottom clearfix">
-              <time class="time">2020-03-27</time>
-              <el-button type="text"
-                         class="button">操作按钮</el-button>
-            </div>
-          </div>
-        </el-card>
-      </el-col>
-      <el-col :span="12">
-        <el-card :body-style="{ padding: '0px' }">
-          <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
-               class="image">
-          <div style="padding: 14px;">
-            <span>好吃的汉堡</span>
-            <div class="bottom clearfix">
-              <time class="time">2020-03-27</time>
-              <el-button type="text"
-                         class="button">操作按钮</el-button>
-            </div>
-          </div>
-        </el-card>
-      </el-col>
-    </el-row>
+    <div class="project clearfix"
+         v-for="(item, index) in projectList"
+         :key="index">
+      <div class="img">
+        <router-link :to="{'path': '/projectDetail', 'query': {'id': item.id}}">
+          <el-image :src="item.cover"
+                    :preview-src-list="[item.cover]"></el-image>
+        </router-link>
+      </div>
+      <div class="info">
+        <div class="title wordOverFlow">
+          <router-link :to="{'path': '/projectDetail', 'query': {'id': item.id}}">
+            {{ item.title }}
+          </router-link>
+        </div>
+        <div class="tip clearfix wordOverFlow">
+          <span>{{ item.introduction }}</span>
+        </div>
+        <div class="tag clearfix wordOverFlow">
+          <el-tag size="mini"
+                  :type="['', 'success', 'info', 'danger', 'warning'][tagIndex % 4]"
+                  v-for="(tagItem, tagIndex) in item.tag"
+                  :key="'tag' + tagIndex">{{ tagItem.label }}</el-tag>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
