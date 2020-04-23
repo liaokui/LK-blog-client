@@ -74,7 +74,7 @@ export default {
     leaveMessage (params) {
       leaveMessage(params).then(res => {
         this.loading = false
-            if (res.code === 200) {
+            if (res && res.status === 'success') {
               this.$message({
                 message: res.msg,
                 type: 'success'

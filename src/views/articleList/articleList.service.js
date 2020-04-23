@@ -1,9 +1,9 @@
 import request from '@/utils/request'
 
-export function getPage(params) {
+export function getArticleList(params) {
   return request({
-    url: '/scene/describeSceneByPage',
-    method: 'post',
-    data: params
+    url: '/api/article/find',
+    method: 'get',
+    params
   });
 }

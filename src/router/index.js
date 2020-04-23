@@ -12,7 +12,7 @@ const LeaveMessage = () => import('../views/leaveMessage/leaveMessage.vue')
 
 
 
-Vue.use(Router)
+Vue.use(Router)         
 export default new Router({
   routes: [
     {

@@ -16,8 +16,8 @@
       <div class="tag clearfix">
         <el-tag size="mini"
                 :type="['', 'success', 'info', 'danger', 'warning'][index % 4]"
-                v-for="(tag, index) in project.tag"
-                :key="index">{{ tag.label }}</el-tag>
+                v-for="(tag, index) in project.tagId"
+                :key="index">{{ tag.tagName }}</el-tag>
       </div>
       <div class="link clearfix">
         <el-button circle
@@ -42,7 +42,7 @@
     </div>
     <div class="details">
       <div id="detailsContent"
-           v-html="project.details"></div>
+           v-html="project.content"></div>
     </div>
   </div>
 </template>

@@ -35,7 +35,8 @@
       </div>
     </header>
     <section class="container">
-      <el-scrollbar>
+      <el-scrollbar id="scrollCover" class="app-el-scrollbar"
+        ref="componentScrollBar">
         <div class="content clearfix">
           <div class="left">
             <router-view></router-view>
@@ -63,14 +64,16 @@
             </div>
           </div>
         </div>
-        <el-backtop target=".el-scrollbar .el-scrollbar__wrap" :bottom="40" :visibility-height='500'>
-          top
-        </el-backtop>
         <footer>
           <p>Copyright © 2018 LK. All rights reserved.</p>
         </footer>
+        <el-backtop target=".el-scrollbar .el-scrollbar__wrap"
+                    :bottom="40"
+                    :visibility-height='500'>
+          <i class="el-icon-top"></i>
+        </el-backtop>
       </el-scrollbar>
-      
+
     </section>
   </div>
 </template>
@@ -84,10 +87,14 @@
     height: 100%;
     .el-scrollbar__wrap {
       overflow-x: hidden;
-      .el-backtop {
-        font-size: 14px;
+      .el-backtop i {
+        display: block;
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
         font-weight: bold;
-        line-height: 40px;
+        line-height: 44px;
+        text-align: center;
         cursor: pointer;
       }
     }

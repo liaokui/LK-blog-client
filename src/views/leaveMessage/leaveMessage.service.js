@@ -12,7 +12,7 @@ export function getCaptcha() {
 // 留言
 export function leaveMessage(params) {
   return request({
-    url: '/scene/describeSceneByPage',
+    url: '/api/message/create',
     method: 'post',
     data: params
   });

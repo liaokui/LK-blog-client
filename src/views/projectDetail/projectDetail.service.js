@@ -1,9 +1,9 @@
 import request from '@/utils/request'
 
-export function getPage(params) {
+export function getProjectDetail(params) {
   return request({
-    url: '/scene/describeSceneByPage',
-    method: 'post',
-    data: params
+    url: '/api/project/detail',
+    method: 'get',
+    params
   });
 }
