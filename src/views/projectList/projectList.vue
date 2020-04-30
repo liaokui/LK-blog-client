@@ -32,7 +32,7 @@
         <span>加载中 ~~</span>
       </div>
     </el-collapse-transition>
-    <p v-if="noMore" class="nomore">没有更多了</p>
+    <p v-if="noMore" class="nomore">没有更多了~~</p>
   </div>
 </template>
 <script>

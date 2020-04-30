@@ -52,4 +52,30 @@
       
     }
   }
+  .load {
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .4);
+    span {
+      color: #ffffff;
+      font-size: 12px;
+    }
+    i {
+      color: #ffffff;
+      font-size: 16px;
+    }
+  }
+  .nomore {
+    width: 100%;
+    padding: 15px 0;	
+    margin-top: 20px;
+    color: #5A5B5C;
+    font-size: 14px;
+    text-align: center;
+  }
 }

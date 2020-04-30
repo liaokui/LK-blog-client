@@ -4,7 +4,7 @@ export default {
   components: {},
   data () {
     return {
-     list: [],
+      list: [],
       noMore: false,
       isLoading: true,
       continueLoading: false,
@@ -44,7 +44,7 @@ export default {
               return item
             }))
             this.page.total = res.data.count;
-          }4
+          }
         }
         this.continueLoading = false;
         this.isLoading = true;

@@ -69,7 +69,7 @@
         </footer>
         <el-backtop target=".el-scrollbar .el-scrollbar__wrap"
                     :bottom="40"
-                    :visibility-height='500'>
+                    :visibility-height='100'>
           <i class="el-icon-top"></i>
         </el-backtop>
       </el-scrollbar>
