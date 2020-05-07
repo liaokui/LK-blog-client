@@ -4,7 +4,7 @@
     <header>
       <div class="header clearfix">
         <div class="logo">
-          <p>LK-blog</p>
+          <p><router-link :to="{'path': '/'}">LK-blog</router-link></p>
         </div>
         <el-menu :default-active="routerIndex"
                  class="el-menu-demo"
@@ -98,6 +98,9 @@
         cursor: pointer;
       }
     }
+  }
+  .el-menu--horizontal>.el-menu-item a, .el-menu--horizontal>.el-menu-item a:hover {
+    display: block;
   }
 }
 </style>

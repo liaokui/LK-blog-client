@@ -50,6 +50,16 @@
   import index from './projectDetail'
   export default index
 </script>
+<style rel='stylesheet/scss' lang='scss'>
+  #articleDetail{
+    #detailsContent {
+      width: 100%;
+      *{
+        max-width: 100%;
+      }
+    }
+  }
+</style>
 <style rel='stylesheet/scss' scoped lang='scss'>
 @import './projectDetail.scss';
 </style>
