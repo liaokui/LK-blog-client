@@ -51,7 +51,7 @@
   export default index
 </script>
 <style rel='stylesheet/scss' lang='scss'>
-  #articleDetail{
+  #projectDetail{
     #detailsContent {
       width: 100%;
       *{
