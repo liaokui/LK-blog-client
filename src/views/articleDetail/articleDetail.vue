@@ -1,6 +1,6 @@
 <template>
   <div id='articleDetail'>
-    <div class="content">
+    <div class="content" v-if="isHaS">
       <div class="cover">
         <el-image :src="article.cover"
                   style="width: 100%;height: 360px"
@@ -20,9 +20,13 @@
                 :key="index">{{ tag.tagName }}</el-tag>
       </div>
     </div>
-    <div class="details">
+    <div class="details" v-if="isHaS">
       <div id="detailsContent"
            v-html="article.content"></div>
+    </div>
+    <div class="noContent" v-if="!isHaS">
+      <img src="../../assets/imgs/no_data.png" alt="">
+      <p>文章不存在</p>
     </div>
   </div>
 </template>
@@ -34,6 +38,11 @@
   #articleDetail{
     #detailsContent {
       width: 100%;
+      word-break: break-word;
+      line-height: 1.75;
+      font-weight: 400;
+      font-size: 15px;
+      overflow-x: hidden;
       *{
         max-width: 100%;
       }

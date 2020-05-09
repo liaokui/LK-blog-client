@@ -37,4 +37,17 @@
   .details {
     padding: 20px;
   }
+  .noContent {
+    padding: 20px;
+    img {
+      display: block;
+      width: 400px;
+      margin: 0 auto;
+    }
+    p {
+      color: #999999;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
 }

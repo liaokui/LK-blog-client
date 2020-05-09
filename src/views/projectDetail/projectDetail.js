@@ -4,7 +4,8 @@ export default {
   components: {},
   data () {
     return {
-      project: {}
+      project: {},
+      isHaS: true
     }
   },
   created () {
@@ -22,11 +23,14 @@ export default {
   methods: {
     getDetail () {
       const params = {
-        'id': this.id
+        'id': this.id,
+        'status': 1,
       }
       getProjectDetail(params).then(res => {
         if (res && res.status === 'success') {
           this.project = res.data
+        } else {
+          this.isHaS = false
         }
       }, error => {
         this.message.error(error)
